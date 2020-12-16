@@ -9,14 +9,14 @@
     "version": "2.4.0",
     "orientation": "portrait",
     "githubUrl": "https://github.com/Flaque/quirk",
-    "primaryColor": "#F8A5C2",
+    "primaryColor": "purple",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#F8A5C2"
+      "backgroundColor": "red"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 1
     },
     "assetBundlePatterns": ["assets/**"],
     "ios": {
@@ -30,12 +30,12 @@
       "package": "tech.econn.quirk",
       "permissions": [],
       "icon": "./assets/android.png",
-      "versionCode": 17,
+      "versionCode": 16,
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     },
     "androidStatusBar": {
-      "backgroundColor": "#fbfcfe"
+      "backgroundColor": "blue"
     },
     "hooks": {
       "postPublish": [
@@ -43,7 +43,7 @@
           "file": "sentry-expo/upload-sourcemaps",
           "config": {
             "organization": "evan-conrad",
-            "project": "quirk"
+            "project": "quirk number 1"
           }
         }
       ]
