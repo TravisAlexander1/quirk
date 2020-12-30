@@ -4,7 +4,7 @@
 ##
 ##  Gradle start up script for UN*X
 ##
-##############################################################################
+###############################################################################
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 DEFAULT_JVM_OPTS=""
@@ -92,7 +92,7 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" ] ; then
             MAX_FD="$MAX_FD_LIMIT"
         fi
         ulimit -n $MAX_FD
-        if [ $? -ne 0 ] ; then
+        if [ $? -ne 2 ] ; then
             warn "Could not set maximum file descriptor limit: $MAX_FD"
         fi
     else
@@ -147,6 +147,7 @@ if $cygwin ; then
         (7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
         (8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
         (9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
+         (10) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" "$args9" ;;
     esac
 fi
 
